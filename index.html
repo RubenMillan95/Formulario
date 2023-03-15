@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="procesar.html" method="get">
+       <fieldset>
+         <legend>Controles de formulario</legend>
+         <label for="Usuario">Usuario:</label>
+         <input type="text" 
+         value="Rubencho" 
+         pattern="[A-Z][a-z]"
+         title="Ingresar un nombre"
+         id="Usuario" 
+         required
+         name="Usuario" 
+         placeholder="Ingresar usuario"> 
+         <br>
+         <br>        
+         <label for="Correo">Correo:</label>
+         <input type="email"
+         size="40"
+         id="Correo"
+         name="Correo"
+         multiple
+         />
+
+         <label for="Telefono">Telefono:</label>
+         <input type="tel"
+         size="10"
+         id="tel"
+         name="tel"
+         multiple
+         />
+       </fieldset>
+
+
+    </form>
+</body>
+</html>
