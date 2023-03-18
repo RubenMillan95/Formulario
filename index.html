@@ -8,14 +8,16 @@
 </head>
 <body>
     <form action="procesar.html" method="get">
+      <!--comentaaario--> 
        <fieldset>
          <legend>Controles de formulario</legend>
          <label for="Usuario">Usuario:</label>
          <input type="text" 
          value="Rubencho" 
-         pattern="[A-Z][a-z]"
+         pattern="[A-Za-z]{0,5}"
          title="Ingresar un nombre"
          id="Usuario" 
+         placeholder="Ingrese Dato"
          required
          name="Usuario" 
          placeholder="Ingresar usuario"> 
@@ -35,10 +37,63 @@
          id="tel"
          name="tel"
          multiple
+         required  
+      
          />
+
+         <label for="fecha">Fecha:</label>
+         <input type="date" id="fecha" name="fecha">
+         <br>
+         <br>
+         <!--botones tipo radio-->
+         <label for="joven">Joven:</label>
+         <input type="radio" id="joven" name="edad" value="0-25">
+         <label for="adulto">Adulto:</label>
+         <input type="radio" id="adulto" name="edad" value="26-55">
+
+         <!--barras de deslizamiento-->
+         <br>
+         <br>
+         <label for="rango">Rango:</label>
+         <input type="range" id="ingreso" name="ingreso" min="1" max="100">
+
+         <!--check box o términos-->
+         <br>
+         <br>
+         <label for="terminos">Terminos</label>
+         <input type="checkbox" name="terminos" id="terminos">
+         
+         <!--barra de selección desplegable-->
+         <br>
+         <br>
+         <select name="pais" id="pais">
+         <option value="co">Colombia</option>
+         <option value="br">Brasil</option>
+         <option value="ca">Canada</option>
+         </select>
+         <br>
+         <br>
+         <!--coso de texto es mejor utilizar HOJA DE ESTILO-->
+         <textarea name="datos" id="datos" cols="30" rows="10"></textarea>
+         <br>
+         <br>
+
+         
+        
+         <input type="submit">
+          <!--resetear el formulario-->
+          <button type="reset">Borrar</button>
+          <button type="submit">Enviar</button>
+
+           <button type="button" 
+           onclick="mostrarMensaje()">Botón</button>
+
+           <button type="button" id="otroBoton">Botón 2</button>
+
        </fieldset>
 
 
     </form>
+    <script src="programi.js"></script>
 </body>
 </html>
